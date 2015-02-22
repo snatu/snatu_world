@@ -25,16 +25,16 @@ ActiveRecord::Schema.define(version: 20150222223907) do
   create_table "categories", force: true do |t|
     t.string   "name"
     t.boolean  "active",     default: true
-    t.datetime "created_at",                null: false
-    t.datetime "updated_at",                null: false
+    t.datetime "created_at"
+    t.datetime "updated_at"
   end
 
   create_table "photos", force: true do |t|
     t.string   "caption"
     t.integer  "category_id"
     t.boolean  "active",      default: true
-    t.datetime "created_at",                 null: false
-    t.datetime "updated_at",                 null: false
+    t.datetime "created_at"
+    t.datetime "updated_at"
     t.string   "image"
   end
 
@@ -42,8 +42,8 @@ ActiveRecord::Schema.define(version: 20150222223907) do
     t.string   "klingon"
     t.string   "translation"
     t.boolean  "active",      default: true
-    t.datetime "created_at",                 null: false
-    t.datetime "updated_at",                 null: false
+    t.datetime "created_at"
+    t.datetime "updated_at"
   end
 
 end
