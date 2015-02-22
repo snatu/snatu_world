@@ -3,6 +3,6 @@ class Article < ActiveRecord::Base
 
 	validates_presence_of :title, :content
 
-	scope :alphabetical, order('name')
 	scope :active, where('active = ?', true)
+    scope :alphabetical, order('title')
 end
